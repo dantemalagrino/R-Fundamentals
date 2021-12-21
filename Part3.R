@@ -1,12 +1,12 @@
-# R-Fundamentals - Script 3 of 4
+# R Fundamentals: Part 3 of 4
 
-##### Challenge 1 - load data from files
+## In the previous lesson, we worked closely with dataframes, a data structure available in R. We learned how to 
+### Challenge 1 - load data from files
+### 1. Load the gapminder-FiveYearData.csv file and save it in a variable named gap
 
-##### 1. Load the gapminder-FiveYearData.csv file and save it in a variable named gap
+### 2. Load the sleep_VIM.csv file and save it in a variable named sv.
 
-##### 2. Load the sleep_VIM.csv file and save it in a variable named sv
-
-##### 3. Load the heart.csv file and save it in a variable named heart
+### 3. Load the heart.csv file and save it in a variable named heart.
 
 # Section 1: save() and load()
 
@@ -15,20 +15,19 @@
 save(gap, sv, heart, 
      file = "data/fun_data.RData")
 
-##### Challenge 2 - loading .RData files
+### Challenge 2: Loading .RData files
 
-##### 1. Wipe your global environment clean
+### 1. Wipe your global environment clean
 
-##### 2. Restart your R session by clicking "Session" --> "Restart R"
+### 2. Restart your R session by clicking "Session" --> "Restart R"
 
-##### 3. Load "fun_data.RData". If you don't know how to do this, how do you find out? 
+### 3. Load "fun_data.RData". If you don't know how to do this, how do you find out? 
 
 # Section 2: Data Summarization
 
-## Computing basic summary statistics is a good first step after you familiarize yourself with data
+## Computing basic summary statistics is a good first step after you familiarize yourself with a new dataframe.
 
-## The summary function will return frequenies for factor variables and six number summaries for continuous variables
-## Six number summary = minimum and maximum, 1st and 3rd quartile boundaries, and median and mean
+## The summary() function will return frequencies for factor variables and six number summaries for continuous variables (minimum, 1st quartile, median, 3rd quartile, maximum, and mean):
 summary(gap)
 
 ## We can also use this function on a single vector
